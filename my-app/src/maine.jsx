@@ -58,14 +58,10 @@ export default function Clock()
         return () => clearInterval(intervalId);
       }, [futureDate]);
     
-    // Example usage:
+      // set the time to your date
     var futureDate = "2024-06-03T12:00:00"; // Example future date
     var timeDifference = calculateTimeDifference(futureDate);
-    // console.log("Days:", timeDifference.days);
-    // console.log("Hours:", timeDifference.hours);
-    // console.log("Minutes:", timeDifference.minutes);
-    // console.log("Seconds:", timeDifference.seconds);
-    // console.log("Milliseconds:", timeDifference.milliseconds);
+
     
     return <Box >
         <Box mt={'15%'}>
